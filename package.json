@@ -1,0 +1,15 @@
+{
+  "name": "colwickffc",
+  "version": "1.0.0",
+  "description": "Colwick Fly Fishing Club web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "SJ Leivers",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
