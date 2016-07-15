@@ -1,0 +1,18 @@
+{
+  "name": "colwickffc",
+  "description": "Colwick Fly Fishing Club web app",
+  "main": "app.js",
+  "authors": [
+    "SJ Leivers"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/SarahJessica/colwickffc",
+  "ignore": [
+    "**/.*",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  }
+}
