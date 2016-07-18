@@ -7,6 +7,10 @@ var port = 5000;
 // MIDDLEWARE
 app.use(express.static('public'));
 app.use(express.static('src/views'));
+app.set('views', './src/views');
+
+var handlebars = require('express-handlebars');
+app.set('view engine', '.hbs');
 
 
 // SERVE

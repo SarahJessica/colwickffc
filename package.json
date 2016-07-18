@@ -10,7 +10,8 @@
   "author": "SJ Leivers",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -18,7 +19,6 @@
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.1",
     "jshint": "^2.9.2",
-    "jshint-stylish": "^2.2.0",
-    "wiredep": "^4.0.0"
+    "jshint-stylish": "^2.2.0"
   }
 }
