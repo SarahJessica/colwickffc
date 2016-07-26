@@ -13,7 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "^4.6.3",
-    "handlebars": "^4.0.5" // probably won't need this
+    "font-awesome": "^4.6.3"
   }
 }
