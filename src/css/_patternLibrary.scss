@@ -1,0 +1,74 @@
+//COLOURS
+$mustard : #CFCA4C;
+$cream : #FCF5BF;
+$mint : #9FEFC2;
+$turquoise : #5EB299;
+$mud : #745A33;
+$taupe : #7C795E;
+$slate: #3E3E3E;
+$white: #FFFFFF;
+
+//FONTS
+@font-face {
+    font-family : slab;
+    src : url(../fonts/Harman-Slab.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+$slab : slab;
+@font-face {
+    font-family : slab-inline;
+    src : url(../fonts/Harman-Slab-Inline.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+$slab-inline : slab-inline;
+@font-face {
+    font-family : elegant;
+    src : url(../fonts/Harman-Elegant.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+$elegant : elegant;
+
+.typo {
+  .typo__family {
+    &__cutthroat {
+      font-family: $slab, "Times New Roman", Times, serif;
+      text-transform: uppercase;
+    }
+    &__cutbow {
+      font-family: $slab-inline, "Times New Roman", Times, serif;
+      text-transform: uppercase;
+    }
+    &__rainbow {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+    &__silver {
+      font-family: $elegant, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+    &__brown {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+  .typo__size {
+    &__barefoot {
+      font-size: 8px;
+    }
+    &__flipflop {
+      font-size: 12px
+    }
+    &__midboot {
+      font-size: 16px;
+    }
+    &__highboot {
+      font-size: 20px;
+    }
+    &__wellington {
+      font-size: 24px;
+    }
+    &__wader {
+      font-size: 28px;
+    }
+  }
+}
