@@ -24,9 +24,7 @@ app.listen(port, function(err){
 app.get('/', function(req, res){
     res.render('index');
 });
-app.get('/#about', function(req, res){
-    res.render('index');
-});
+
 // app.post();
 // app.put();
 // app.delete();

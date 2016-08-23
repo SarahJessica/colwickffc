@@ -16,39 +16,39 @@
   font-weight: normal;
   font-style: normal; }
 
-.typo .typo__family__cutthroat {
+.typo.typo__family__cutthroat {
   font-family: slab, "Times New Roman", Times, serif;
   text-transform: uppercase; }
 
-.typo .typo__family__cutbow {
+.typo.typo__family__cutbow {
   font-family: slab-inline, "Times New Roman", Times, serif;
   text-transform: uppercase; }
 
-.typo .typo__family__rainbow {
+.typo.typo__family__rainbow {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
-.typo .typo__family__silver {
+.typo.typo__family__silver {
   font-family: elegant, "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
-.typo .typo__family__brown {
+.typo.typo__family__brown {
   font-family: Arial, Helvetica, sans-serif; }
 
-.typo .typo__size__barefoot {
+.typo.typo__size__barefoot {
   font-size: 8px; }
 
-.typo .typo__size__flipflop {
+.typo.typo__size__flipflop {
   font-size: 12px; }
 
-.typo .typo__size__midboot {
+.typo.typo__size__midboot {
   font-size: 16px; }
 
-.typo .typo__size__highboot {
+.typo.typo__size__highboot {
   font-size: 20px; }
 
-.typo .typo__size__wellington {
+.typo.typo__size__wellington {
   font-size: 24px; }
 
-.typo .typo__size__wader {
+.typo.typo__size__wader {
   font-size: 28px; }
 
 #splash {

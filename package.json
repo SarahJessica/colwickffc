@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "sass": "gulp scss"
+    "sass": "rm -rf public/css && gulp scss && mv public/scss public/css"
   },
   "author": "SJ Leivers",
   "license": "ISC",
