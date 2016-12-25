@@ -32,7 +32,7 @@ $slab-inline : slab-inline;
 $elegant : elegant;
 
 .typo {
-  &.typo__family {
+  &.typo_family {
     &__cutthroat {
       font-family: $slab, "Times New Roman", Times, serif;
       text-transform: uppercase;
@@ -51,7 +51,7 @@ $elegant : elegant;
       font-family: Arial, Helvetica, sans-serif;
     }
   }
-  &.typo__size {
+  &.typo_size {
     &__barefoot {
       font-size: 8px;
     }

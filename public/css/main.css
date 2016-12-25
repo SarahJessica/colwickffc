@@ -16,43 +16,45 @@
   font-weight: normal;
   font-style: normal; }
 
-.typo.typo__family__cutthroat {
+.typo.typo_family__cutthroat {
   font-family: slab, "Times New Roman", Times, serif;
   text-transform: uppercase; }
 
-.typo.typo__family__cutbow {
+.typo.typo_family__cutbow {
   font-family: slab-inline, "Times New Roman", Times, serif;
   text-transform: uppercase; }
 
-.typo.typo__family__rainbow {
+.typo.typo_family__rainbow {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
-.typo.typo__family__silver {
+.typo.typo_family__silver {
   font-family: elegant, "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
-.typo.typo__family__brown {
+.typo.typo_family__brown {
   font-family: Arial, Helvetica, sans-serif; }
 
-.typo.typo__size__barefoot {
+.typo.typo_size__barefoot {
   font-size: 8px; }
 
-.typo.typo__size__flipflop {
+.typo.typo_size__flipflop {
   font-size: 12px; }
 
-.typo.typo__size__midboot {
+.typo.typo_size__midboot {
   font-size: 16px; }
 
-.typo.typo__size__highboot {
+.typo.typo_size__highboot {
   font-size: 20px; }
 
-.typo.typo__size__wellington {
+.typo.typo_size__wellington {
   font-size: 24px; }
 
-.typo.typo__size__wader {
+.typo.typo_size__wader {
   font-size: 28px; }
 
 #splash {
-  max-height: 100vh; }
+  background-image: url("./img/100-wave-frames/1.jpg");
+  height: 100vh;
+  width: 100%; }
 
 h1 {
-  color: #745A33; }
+  color: red; }
