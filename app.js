@@ -7,7 +7,6 @@ app.use(express.static('public'));
 // app.use(express.static('src/views'));
 app.set('views', './src/views');
 
-
 // HANDLEBARS
 var handlebars = require('express-handlebars');
 app.engine('.hbs', handlebars({extname: '.hbs'}));
@@ -24,6 +23,7 @@ app.listen(port, function(err){
 app.get('/', function(req, res){
     res.render('index');
 });
+
 
 // app.post();
 // app.put();

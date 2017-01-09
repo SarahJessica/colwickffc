@@ -4,9 +4,10 @@
   "description": "Colwick Fly Fishing Club web app",
   "main": "app.js",
   "scripts": {
+    "debug": "nodemon --debug ./app.js 80",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "sass": "rm -rf public/css && gulp scss && mv public/scss/* public/css"
+    "sass": "rm -rf public/css && gulp scss && mkdir public/css/ && mv public/scss/* public/css/main.css"
   },
   "author": "SJ Leivers",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "gulp-sass": "^2.3.2",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
+    "nodemon": "^1.11.0",
     "supertest": "^2.0.0"
   }
 }
