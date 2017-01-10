@@ -1,11 +1,14 @@
 #wrapper {
   position: relative;
+  width: 100%;
+  // display: none;
+
 }
 #splash {
-  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
+  background-attachment: fixed;
   background-position: center;
   position: fixed;
   display: inline;
@@ -20,7 +23,7 @@
       left: 0;
       position: fixed;
       display: inline;
-      min-height: 100vh;
+      min-height: 200vh;
       width: 100%;
       background-color: $cream;
     }
@@ -39,9 +42,19 @@
   }
 }
 
+nav {
+  height: 44px;
+  width: 100%;
+  background-color: $white;
+  position: absolute;
+  z-index: 100;
+  top: 200vh;
+  margin: 0;
+}
+
 #about {
   height: 100vh;
-  top: 100vh;
+  top: 300vh;
   position: absolute;
   z-index: 10;
   padding: 15 5 20 5;
