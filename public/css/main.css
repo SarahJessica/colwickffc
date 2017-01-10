@@ -53,26 +53,35 @@
 
 #splash {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   background-position: center;
   position: fixed;
   display: inline;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%; }
-
-#wave-frame-holder {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-image: "/img/100-wave-frames/100.jpg";
-  display: inline; }
+  #splash .animation__fade {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: inline;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FCF5BF; }
+  #splash .jumbotron {
+    position: absolute;
+    z-index: 3;
+    top: 20vh;
+    left: 0;
+    padding: 5; }
+    #splash .jumbotron h1 {
+      color: #3E3E3E; }
 
 #about {
-  min-height: 100vh;
-  margin-top: 100vh; }
-
-h1 {
-  color: red; }
+  height: 100vh;
+  margin-top: 100vh;
+  padding: 15 5 20 5;
+  background-color: #596969; }

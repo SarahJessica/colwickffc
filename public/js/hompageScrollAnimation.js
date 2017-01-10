@@ -2,28 +2,56 @@
 
 (function iife() {
   const splashPxPerVh = Math.floor($("#splash").height() / 100);
-  var imgArray = [];
+  var prevScrollPos = 0;
 
+  var imgArray = [];
   preloadImages(imgArray);
-  console.log(imgArray);
+
+
 
   $(window).on('scroll', function() {
     var topOffset = $(this).scrollTop();
     var bgImg = currentBgImg(percentageDown(topOffset), imgArray);
+    setBgImg(bgImg, topOffset);
+    fadeOutOnScroll(topOffset, '.animation__fade', 0, 100);
 
-    $("#splash").css("background-image", "url(" + bgImg + ")");
-    if (topOffset > $("#splash").height() ) {
-      $("#splash").css("display", "none");
-    } else {
-      $("#splash").css("display", "visible");
-    }
+    // if ( prevScrollPos <= topOffset ) {
+    //   if ( topOffset <= splashPxPerVh ) {
+    //   }
+    //   console.log("scroll down");
+    // } else {
+    //   console.log("sroll up");
+    // }
+    // prevScrollPos = topOffset;
+    // console.log(topOffset);
   });
 
 }());
 
+function fadeOutOnScroll(offset, elem, startOffset, endOffset) {
+  if ( offset >= startOffset) {
+    if (offset < endOffset) {
+      $(elem).css('opacity', ((100 - offset) / 100).toString());
+    } else {
+      $(elem).css('opacity', '0');
+    }
+  } else {
+    $(elem).css('opacity', '1');
+  }
+}
+
+function setBgImg(img, offset) {
+  $("#splash").css("background-image", "url(" + img + ")");
+  if (offset > $("#splash").height() ) {
+
+  } else {
+    return $("#splash").css("display", "inline");
+  }
+}
+
 function preloadImages(imgs) {
   // remember images are labelled 1 to 100 not 0 to 99
-  for (var i = 0; i <= 99; i++) {
+  for ( var i = 0; i <= 99; i++ ) {
     imgs[i] = new Image();
     imgs[i].src = "/img/100-wave-frames/" + (i + 1).toString() + ".jpg";
   }
@@ -31,7 +59,6 @@ function preloadImages(imgs) {
 }
 
 function currentBgImg(percent, imgs){
-
   if(percent < 100  && percent > 0 ) {
       return imgs[percent].src;
   } else if (percent >= 100 ){
